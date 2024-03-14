@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeFormDemo", "EmployeeFormDemo.csproj", "{206CC3E9-3CFE-4656-9E1D-2E07D7291BBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeFormTestProject", "..\EmployeeFormTestProject\EmployeeFormTestProject.csproj", "{67E6C1A7-221C-44AC-91F3-03AE02C35D7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{206CC3E9-3CFE-4656-9E1D-2E07D7291BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206CC3E9-3CFE-4656-9E1D-2E07D7291BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206CC3E9-3CFE-4656-9E1D-2E07D7291BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206CC3E9-3CFE-4656-9E1D-2E07D7291BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E6C1A7-221C-44AC-91F3-03AE02C35D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E6C1A7-221C-44AC-91F3-03AE02C35D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E6C1A7-221C-44AC-91F3-03AE02C35D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E6C1A7-221C-44AC-91F3-03AE02C35D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98C6B893-5B68-4C77-9AAD-25278A1C4EFB}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,70 @@
+﻿<Window x:Class="EmployeeFormDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Employee Form Demo" Height="320" Width="400">
+    
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="160"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="Employee ID:" Padding="0" 
+                   HorizontalAlignment="Right" VerticalAlignment="Center" />
+
+        <TextBox Grid.Column="1" Grid.Row="0" x:Name="txtEmployeeID" 
+                 AutomationProperties.AutomationId="employeeIDTextBox" 
+                 Margin="6" Height="25" VerticalContentAlignment="Center"  />
+
+        <TextBlock Grid.Column="0" Grid.Row="1" Text="Employee Name:" 
+                   HorizontalAlignment="Right" VerticalAlignment="Center" />
+
+        <TextBox Grid.Column="1" Grid.Row="1" x:Name="txtEmployeeName" 
+                 AutomationProperties.AutomationId="employeeNameTextBox" 
+                 Margin="6" Height="25" VerticalContentAlignment="Center"  />
+
+        <TextBlock Grid.Column="0" Grid.Row="2" Text="Employee Mail:" 
+                   HorizontalAlignment="Right" VerticalAlignment="Center" />
+
+        <TextBox Grid.Column="1" Grid.Row="2" x:Name="txtEmployeeMail" 
+                 AutomationProperties.AutomationId="employeeMailTextBox" 
+                 Margin="6" Height="25" VerticalContentAlignment="Center"  />
+
+        <TextBlock Grid.Column="0" Grid.Row="3" Text="Employee Birth Date:" 
+                   HorizontalAlignment="Right" Margin="0" VerticalAlignment="Center" />
+
+        <DatePicker Grid.Column="1" Grid.Row="3" x:Name="dpEmployeeBirthDate" 
+                    AutomationProperties.AutomationId="employeeBirthDatePicker" 
+                    Margin="6" Height="25" VerticalContentAlignment="Center"  />
+
+        <TextBlock Grid.Column="0" Grid.Row="4" Text="Employee Gender:" 
+                   HorizontalAlignment="Right" VerticalAlignment="Center" />
+
+        <ComboBox Grid.Column="1" Grid.Row="4" x:Name="cmbEmployeeGender" 
+                  AutomationProperties.AutomationId="genderComboBox" 
+                  Margin="6" Height="25" VerticalContentAlignment="Center" >
+            <ComboBoxItem Content="Male"/>
+            <ComboBoxItem Content="Female"/>
+        </ComboBox>
+
+        <StackPanel Grid.Column="1"  Grid.Row="5" Orientation="Horizontal" Margin="0,15,0,0">
+            <Button AutomationProperties.AutomationId="btnCancel" Content="Cancel" 
+                    Click="OnCancelClick" Margin="6,2,2,2" Width="65" Height="25" />
+            
+            <Button AutomationProperties.AutomationId="btnSave" Content="Save" 
+                    Click="OnSaveClick"  Margin="5,2,2,2" Width="65" Height="25" />
+        </StackPanel>
+    </Grid>
+</Window>
